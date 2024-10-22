@@ -1,0 +1,11 @@
+<div>
+  <h2>Upload XML File</h2>
+  <input type="file" (change)="onFileSelected($event)" />
+  @if(transformedContent){
+    <div>
+      <h3>Transformed Content</h3>
+      <div [innerHTML]="transformedContent"></div>
+    </div>
+  }
+
+</div>
